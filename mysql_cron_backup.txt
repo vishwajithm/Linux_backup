@@ -1,0 +1,2 @@
+0 0 * * * ~/scripts/db_backup.sh # take a backup every midnight
+0 2 * * * ~/scripts/db_sync.sh # upload the backup at 2am
