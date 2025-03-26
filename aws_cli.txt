@@ -1,0 +1,3 @@
+apt-get update
+apt-get -y install python-pip
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
