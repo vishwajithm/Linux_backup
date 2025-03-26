@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Clearing System Cache..."
+
+# Clear PageCache, dentries, and inodes
+sync; echo 3 > /proc/sys/vm/drop_caches
+
+# Clear swap memory
+swapoff -a && swapon -a
+
+echo "Cache cleared successfully!"
